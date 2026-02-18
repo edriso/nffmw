@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nfs-dark: #0f172a;
+  --color-nfs-blue: #1e3a5f;
+  --color-nfs-cyan: #06b6d4;
+  --color-nfs-orange: #f97316;
+  --color-nfs-yellow: #facc15;
+  --color-nfs-green: #22c55e;
+  --color-nfs-gray: #94a3b8;
+  --color-nfs-light: #f1f5f9;
+}
+
+body {
+  @apply bg-nfs-dark text-nfs-light min-h-screen antialiased;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+a {
+  @apply text-nfs-cyan hover:text-nfs-orange transition-colors;
+}
